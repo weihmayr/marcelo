@@ -3,55 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Position</title>
 </head>
 <style>
+	body {
+		margin: 0;
+	}
 
- body {
- 	margin: 0;
- 	padding: 0;
- }
+	div#pai {
+		width: 400px;
+		height: 200px;
+		border: 1px solid red;
+		position: absolute;
+		top: 30px;
+   		left: 30px;
+   		background-color: yellow;
+	}
 
- div#pai {
- 	position: absolute;
- 	width: 500px;
- 	height: 300px;
- 	background-color: tomato;
- 	top: 30px;
- 	left: 30px;
- }
+	div#filho {
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+		
+	}
 
- div#filho {
- 	position: relative;
- 	bottom: -20px;
- 	right: -10px;
- 	height: 50px;
- 	width: 50px;
- 	background-color: red;
+	/*
+     position:  absolute / relative / fixed;
+	  --top
+	  --lef	
+	 */
 
- }
-
- /*
-  
-   	position: absolute;
- 	position: relative;
- 	position: fixed;
-	---
-	top
-	left
-	right
-	bottom
-	z-index
-
- */
-	
 </style>
 <body>
 
-	<div id="pai"> 
-		<div id="filho"></div>
-	</div>
- 
-	
+	<div id="pai"></div>
+	<div id="filho"></div>
+
+
+<!--
+	<div id="teste_1"></div>
+	<div id="teste_2"></div>
+	<div id="teste_3"></div>
+	<div id="teste_4"></div>
+-->
 </body>
 </html>
